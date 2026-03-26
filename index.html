@@ -6,7 +6,7 @@
     <title>Inteligencia | Sergio Lubezky A.</title>
     <meta name="description" content="Reflexión sobre inteligencia aplicada, toma de decisiones y liderazgo en contextos de crisis organizacional.">
 
-    <!-- SCHEMA COMPLETO -->
+    <!-- SCHEMA -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -23,56 +23,12 @@
           "knowsAbout": [
             "Liderazgo interino",
             "Gestión de crisis",
-            "Reestructuración organizacional",
-            "Toma de decisiones bajo presión",
-            "Estrategia operativa",
-            "Inteligencia colectiva",
-            "Pensamiento sistémico",
-            "Hospitalidad",
-            "Hoteles",
-            "Restaurantes"
+            "Toma de decisiones",
+            "Pensamiento sistémico"
           ],
           "hasOccupation": {
             "@type": "Occupation",
-            "name": "Interim Director",
-            "description": "Dirección temporal en contextos de crisis organizacional, enfocada en estabilización y ejecución."
-          }
-        },
-
-        {
-          "@type": "EducationalOrganization",
-          "name": "Inteligencia",
-          "url": "https://inteligencia.com",
-          "founder": {
-            "@id": "https://lubezky.com/#sergio"
-          }
-        },
-
-        {
-          "@type": "WebSite",
-          "@id": "https://inteligencia.com/#website",
-          "url": "https://inteligencia.com",
-          "name": "Inteligencia",
-          "publisher": {
-            "@id": "https://lubezky.com/#sergio"
-          }
-        },
-
-        {
-          "@type": "WebPage",
-          "@id": "https://inteligencia.com/#webpage",
-          "url": "https://inteligencia.com",
-          "name": "Inteligencia",
-          "isPartOf": {
-            "@id": "https://inteligencia.com/#website"
-          }
-        },
-
-        {
-          "@type": "Article",
-          "headline": "Inteligencia",
-          "author": {
-            "@id": "https://lubezky.com/#sergio"
+            "name": "Interim Director"
           }
         },
 
@@ -90,15 +46,6 @@
           "name": "Crisis Management",
           "url": "https://inteligencia.com/crisis-management",
           "provider": {
-            "@id": "https://lubezky.com/#sergio"
-          }
-        },
-
-        {
-          "@type": "PodcastSeries",
-          "name": "El Bien Común",
-          "url": "https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk",
-          "creator": {
             "@id": "https://lubezky.com/#sergio"
           }
         }
@@ -147,6 +94,49 @@
         footer { 
             padding: 60px 20px; 
             text-align: center; 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+        }
+        .profile-img { 
+            width: 75px; 
+            height: 75px; 
+            border-radius: 50%; 
+            margin-bottom: 10px; 
+            object-fit: cover; 
+            border: 1px solid #eee; 
+        }
+        .name-link { 
+            text-decoration: none; 
+            color: inherit; 
+            display: block; 
+            margin-bottom: 10px; 
+        }
+        .name { 
+            font-weight: 600; 
+            font-size: 1rem; 
+            letter-spacing: 1.5px; 
+            text-transform: uppercase; 
+        }
+        .social-nav { 
+            list-style: none; 
+            padding: 0; 
+            margin: 0; 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 12px; 
+            font-size: 0.85rem; 
+        }
+        .social-nav a { 
+            color: #666; 
+            text-decoration: none; 
+        }
+        .social-nav a:hover { 
+            color: #000; 
+        }
+        .social-nav li:not(:last-child)::after { 
+            content: "-"; 
+            margin-left: 12px; 
+            color: #ccc; 
         }
     </style>
 </head>
@@ -169,19 +159,30 @@
 
         <p>
             Al comprender que todos navegamos en <a href="https://elmismobarco.com">el mismo barco</a>, 
-            permitimos que el conocimiento colectivo florezca y dé dirección a sistemas que requieren claridad.
+            permitimos que el conocimiento colectivo florezca.
         </p>
 
         <p>
-            Esta inteligencia aplicada es el ejercicio consciente de nuestras capacidades para transformar el entorno en beneficio de 
+            Esta inteligencia aplicada busca transformar el entorno en beneficio de 
             <a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk">el Bien Común</a>.
         </p>
-
     </div>
 </main>
 
 <footer>
-    <a href="https://lubezky.com">Sergio Lubezky</a>
+    <img src="foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
+    
+    <a href="https://lubezky.com" class="name-link">
+        <span class="name">Sergio Lubezky A.</span>
+    </a>
+    
+    <ul class="social-nav">
+        <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
+        <li><a href="https://www.facebook.com/sergiolubezky" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
+        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
+    </ul>
 </footer>
 
 </body>
