@@ -11,34 +11,36 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-
     {
       "@type": "Person",
       "@id": "https://lubezky.com/#sergio",
       "name": "Sergio Lubezky",
       "url": "https://lubezky.com"
     },
-
     {
       "@type": "Article",
+      "@id": "https://inteligencia.com/empresa-en-crisis/#article",
       "headline": "Empresa en crisis: qué hacer cuando una organización pierde dirección",
-      "author": {
-        "@id": "https://lubezky.com/#sergio"
-      }
+      "author": { "@id": "https://lubezky.com/#sergio" },
+      "publisher": { "@id": "https://lubezky.com/#sergio" },
+      "mainEntityOfPage": { "@id": "https://inteligencia.com/empresa-en-crisis/" },
+      "mentions": [
+        {
+          "@type": "Service",
+          "name": "Interim Management",
+          "url": "https://liderazgointerino.com/" 
+        }
+      ]
     },
-
     {
       "@type": "Service",
-      "name": "Interim Director",
+      "name": "Interim Director / Gestión de Crisis",
+      "provider": { "@id": "https://lubezky.com/#sergio" },
+      "description": "Liderazgo transicional para empresas en procesos de crisis o cambio estructural.",
       "url": "https://inteligencia.com/interim-director"
     }
-
   ]
-}
-</script>
-
-    <style>
-        body { 
+}ody { 
             margin: 0; 
             display: flex; 
             flex-direction: column; 
