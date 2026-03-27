@@ -11,28 +11,38 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-
     {
       "@type": "Person",
       "@id": "https://lubezky.com/#sergio",
       "name": "Sergio Lubezky",
       "url": "https://lubezky.com"
     },
-
     {
       "@type": "Article",
+      "@id": "https://inteligencia.com/falta-de-liderazgo/#article",
       "headline": "Falta de liderazgo en una organización: cuando las decisiones dejan de ocurrir",
-      "author": {
-        "@id": "https://lubezky.com/#sergio"
-      }
+      "author": { "@id": "https://lubezky.com/#sergio" },
+      "publisher": { "@id": "https://lubezky.com/#sergio" },
+      "mainEntityOfPage": { "@id": "https://inteligencia.com/falta-de-liderazgo/" },
+      "about": [
+        { "@type": "Thing", "name": "Liderazgo Organizacional" },
+        { "@type": "Thing", "name": "Toma de Decisiones" }
+      ],
+      "mentions": [
+        {
+          "@type": "WebSite",
+          "name": "Liderazgo Interino",
+          "url": "https://liderazgointerino.com/"
+        }
+      ]
     },
-
     {
       "@type": "Service",
-      "name": "Interim Director",
-      "url": "https://inteligencia.com/interim-director"
+      "name": "Consultoría en Liderazgo Estratégico",
+      "provider": { "@id": "https://lubezky.com/#sergio" },
+      "url": "https://inteligencia.com/interim-director",
+      "description": "Servicios de dirección interina para resolver vacíos de liderazgo en organizaciones en transición."
     }
-
   ]
 }
 </script>
