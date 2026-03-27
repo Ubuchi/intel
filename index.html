@@ -9,24 +9,29 @@
     <!-- SCHEMA -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com",
-          "sameAs": [
-            "https://www.linkedin.com/in/sergiolubezky/"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "name": "Inteligencia",
-          "url": "https://inteligencia.com"
-        }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://inteligencia.com/#website",
+      "url": "https://inteligencia.com/",
+      "name": "Inteligencia",
+      "description": "Plataforma dedicada al análisis y aplicación estratégica de la inteligencia artificial y el pensamiento humano.",
+      "publisher": { "@id": "https://lubezky.com/#sergio" },
+      "copyrightHolder": { "@id": "https://lubezky.com/#sergio" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://lubezky.com/#sergio",
+      "name": "Sergio Lubezky",
+      "url": "https://lubezky.com/",
+      "sameAs": [
+        "https://www.linkedin.com/in/sergiolubezky/",
+        "https://lubezky.com/"
       ]
     }
+  ]
+}
     </script>
 
     <style>
