@@ -3,37 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inteligencia | Sergio Lubezky A.</title>
-    <meta name="description" content="Una forma de entender cómo surgen los problemas en una organización y cómo se relacionan entre sí.">
+    <title>Empresa en Crisis | Problemas Operativos y pérdida de eficiencia</title>
+    <meta name="description" content="Análisis sobre la crisis operativa en las organizaciones. Qué hacer cuando los procesos fallan, los resultados caen y la ejecución pierde consistencia.">
 
-    <!-- SCHEMA -->
     <script type="application/ld+json">
     {
-  "@context": "https://schema.org",
-  "@graph": [
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://lubezky.com/#sergio",
-      "name": "Sergio Lubezky",
-      "url": "https://lubezky.com/",
-      "sameAs": ["https://www.linkedin.com/in/sergiolubezky/", "https://inteligencia.com/", "https://unnuevopuntodevista.com/", "https://liderazgointerino.com/", "https://elmismobarco.com/", "https://coachdefoto.com/"],
-      "knowsAbout": ["Artificial Intelligence", "Digital Strategy", "Applied Intelligence", "Future of Work"]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://inteligencia.com/#website",
-      "name": "Inteligencia",
-      "url": "https://inteligencia.com/",
-      "publisher": { "@id": "https://lubezky.com/#sergio" },
-      "description": "Análisis y aplicación estratégica de la inteligencia artificial y el pensamiento sistémico."
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://lubezky.com/#sergio",
+          "name": "Sergio Lubezky",
+          "url": "https://lubezky.com/",
+          "sameAs": [
+            "https://www.linkedin.com/in/sergiolubezky/",
+            "https://x.com/slubezky",
+            "https://inteligencia.com/",
+            "https://liderazgointerino.com/",
+            "https://coachdefoto.com/",
+            "https://elmismobarco.com/",
+            "https://unnuevopuntodevista.com/"
+          ],
+          "knowsAbout": ["Operational Efficiency", "Crisis Management", "Business Strategy", "Process Optimization"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://inteligencia.com/#website",
+          "name": "Inteligencia",
+          "url": "https://inteligencia.com/",
+          "publisher": { "@id": "https://lubezky.com/#sergio" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://inteligencia.com/empresa-en-crisis/problemas-operativos/#webpage",
+          "url": "https://inteligencia.com/empresa-en-crisis/problemas-operativos/",
+          "name": "Empresa en Crisis: Problemas Operativos",
+          "isPartOf": { "@id": "https://inteligencia.com/#website" },
+          "mainEntity": { "@id": "https://lubezky.com/#sergio" },
+          "description": "Qué hacer cuando la operación de una empresa deja de responder y los síntomas de crisis operativa se acumulan."
+        }
+      ]
     }
-  ]
-}
-</script>
+    </script>
 
     <style>
         body { 
@@ -46,7 +57,6 @@
             font-family: 'Georgia', serif; 
             line-height: 1.8; 
         }
-
         main { 
             flex: 1; 
             display: flex; 
@@ -54,22 +64,17 @@
             justify-content: center; 
             padding: 60px 20px; 
         }
-
         .content-box { 
             max-width: 700px; 
             text-align: center; 
             font-size: 1.2rem; 
         }
-
         h1 { 
             font-size: 1.5rem;
             font-weight: bold; 
             margin-bottom: 16px; 
         }
-
-        p {
-            margin-bottom: 12px;
-        }
+        p { margin-bottom: 12px; }
 
         .content-box a { 
             color: #000; 
@@ -77,17 +82,16 @@
             font-weight: bold; 
             border-bottom: 1px solid #ddd; 
         }
-
         .content-box a:hover { 
             border-bottom: 1px solid #000; 
         }
 
+        /* --- Estilos de Footer Unificado (Micro-ajuste Sergio) --- */
         footer { 
             padding: 60px 20px; 
             text-align: center; 
             font-family: 'Helvetica Neue', Arial, sans-serif; 
         }
-
         .profile-img { 
             width: 75px; 
             height: 75px; 
@@ -96,21 +100,38 @@
             object-fit: cover; 
             border: 1px solid #eee; 
         }
-
         .name-link { 
             text-decoration: none; 
             color: inherit; 
             display: block; 
-            margin-bottom: 10px; 
+            margin-bottom: 2px; 
         }
-
         .name { 
             font-weight: 600; 
             font-size: 1rem; 
             letter-spacing: 1.5px; 
             text-transform: uppercase; 
         }
-
+        .footer-bio {
+            max-width: 650px;
+            margin: 0 auto 30px auto; 
+            font-size: 0.95rem;
+            color: #444;
+            line-height: 1.7;
+        }
+        .footer-bio p { margin: 0; }
+        .footer-bio a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+        .footer-bio a:hover {
+            border-bottom: 1px solid #1a1a1a;
+            background-color: #f9f9f9;
+            color: #000;
+        }
         .social-nav { 
             list-style: none; 
             padding: 0; 
@@ -121,16 +142,13 @@
             gap: 12px; 
             font-size: 0.85rem; 
         }
-
         .social-nav a { 
             color: #666; 
             text-decoration: none; 
         }
-
         .social-nav a:hover { 
             color: #000; 
         }
-
         .social-nav li:not(:last-child)::after { 
             content: "-"; 
             margin-left: 12px; 
@@ -143,49 +161,62 @@
 
 <main>
     <div class="content-box">
-        <h1>Inteligencia</h1>
+        <h1>Empresa en Crisis: Problemas Operativos</h1>
 
         <p>
-            La verdadera inteligencia no es el brillo de una mente aislada, sino la capacidad de reconocer que nuestra razón se expande cuando se conecta con la de los demás.
+            No siempre es evidente cuándo una empresa entra en crisis. 
+            A veces comienza con pequeños desajustes: procesos que se ralentizan, decisiones que no se ejecutan y resultados que dejan de ser consistentes.
         </p>
 
         <p>
-            En una organización, esa inteligencia se manifiesta cuando existe claridad para tomar decisiones y coherencia para ejecutarlas, y cuando esa claridad se pierde, los problemas no aparecen de forma inmediata ni evidente, sino como un deterioro progresivo que comienza en lo humano y se manifiesta en lo operativo.
+            Con el tiempo, esos síntomas operativos se acumulan. 
+            La ejecución pierde claridad, el equipo se descoordina y la organización deja de responder a las demandas del mercado como antes.
         </p>
 
         <p>
-            Con frecuencia, el origen se encuentra en una <a href="/falta-de-liderazgo/">falta de liderazgo</a>, donde las decisiones se postergan, las responsabilidades no están claramente definidas y la dirección se diluye, lo que con el tiempo da lugar a <a href="/problemas-operativos/">problemas operativos</a>: desorden, retrasos y una ejecución que deja de sostener lo que la organización busca lograr.
+            En ese punto, lo más común es intentar entender qué está fallando en la cadena. 
+            Pero cuando la inercia operativa avanza, el análisis ya no es suficiente.
+        </p>
+
+        <p><strong>La crisis operativa exige intervención.</strong></p>
+
+        <p>
+            Se requieren acciones que reordenen el sistema, recuperen la eficiencia y permitan que la estructura vuelva a ser funcional. 
+            No basta con detectar el problema; hay que ejecutar la solución.
         </p>
 
         <p>
-            Si ese proceso no se corrige, puede escalar hasta una <a href="/empresa-en-crisis/">empresa en crisis</a>, donde la empresa pierde control y capacidad de respuesta.
+            Cuando una empresa pierde su capacidad de ejecución, lo que está en juego no es solo el resultado, sino la capacidad de sostener la operación.
         </p>
 
         <p>
-            En ese punto, entender lo que ocurre ya no es suficiente, porque lo que está en juego ya no es la interpretación, sino la capacidad de actuar. Es entonces cuando se vuelve necesario intervenir de forma directa, asumiendo responsabilidad real sobre las decisiones y su ejecución, como ocurre en el <a href="https://liderazgointerino.com">liderazgo interino</a>, donde la prioridad es recuperar claridad, orden y dirección en la operación.
+            En esos momentos, es necesario intervenir directamente en los procesos de decisión y control. 
+            Ahí es donde el <a href="https://liderazgointerino.com">liderazgo interino</a> especializado en eficiencia toma sentido.
         </p>
 
         <p>
-            Este sitio no explica un servicio, sino un sistema: un marco desde el cual es posible comprender cómo se conectan los problemas, las decisiones y las acciones dentro de una organización, y desde el cual la intervención adquiere sentido.
+            Si tu operación está perdiendo coherencia o los resultados indican un deterioro sistémico, es vital actuar antes de que el daño sea estructural.
         </p>
-
-        <p>
-            Ese marco forma parte de una visión más amplia que también se expresa en <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a> y en la comprensión de que todos formamos parte de <a href="https://elmismobarco.com">el mismo barco</a>.
-        </p>
-
-        <p>
-            Cuando esa comprensión se traduce en acción, su impacto no se limita a una organización, sino que puede contribuir al <a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk">bien común</a>.
-        </p>
-
     </div>
 </main>
 
 <footer>
-    <img src="/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
+    <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
     
     <a href="https://lubezky.com" class="name-link">
         <span class="name">Sergio Lubezky A.</span>
     </a>
+
+    <div class="footer-bio">
+        <p>
+            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
+            Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
+            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a> en crisis 
+            y la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a>. 
+            Todo bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
+            para entender que todos estamos en <a href="https://elmismobarco.com" target="_blank">el mismo barco</a>.
+        </p>
+    </div>
     
     <ul class="social-nav">
         <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
