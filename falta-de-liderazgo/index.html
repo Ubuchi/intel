@@ -35,6 +35,24 @@
           "breadcrumb": { "@id": "https://inteligencia.com/empresa-en-crisis/#breadcrumb" },
           "mainEntity": { "@id": "https://lubezky.com/#sergio" },
           "description": "Qué hacer cuando una organización pierde dirección y el equipo deja de responder por falta de liderazgo claro."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://inteligencia.com/empresa-en-crisis/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inteligencia",
+              "item": "https://inteligencia.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Empresa en Crisis",
+              "item": "https://inteligencia.com/empresa-en-crisis/"
+            }
+          ]
         }
       ]
     }
@@ -56,7 +74,7 @@
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            padding: 60px 20px; 
+            padding: 80px 20px; 
         }
         .content-box { 
             max-width: 700px; 
@@ -66,9 +84,11 @@
         h1 { 
             font-size: 1.5rem;
             font-weight: bold; 
-            margin-bottom: 16px; 
+            margin-bottom: 24px; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        p { margin-bottom: 12px; }
+        p { margin-bottom: 16px; }
 
         .content-box a { 
             color: #000; 
@@ -80,11 +100,11 @@
             border-bottom: 1px solid #000; 
         }
 
-        /* --- Estilos de Footer Unificado (con micro-ajuste de espacio) --- */
         footer { 
             padding: 60px 20px; 
             text-align: center; 
             font-family: 'Helvetica Neue', Arial, sans-serif; 
+            border-top: 1px solid #f5f5f5;
         }
         .profile-img { 
             width: 75px; 
@@ -98,7 +118,7 @@
             text-decoration: none; 
             color: inherit; 
             display: block; 
-            margin-bottom: 2px; /* Ajuste para que el nombre abrace la bio */
+            margin-bottom: 2px;
         }
         .name { 
             font-weight: 600; 
@@ -124,7 +144,6 @@
         .footer-bio a:hover {
             border-bottom: 1px solid #1a1a1a;
             background-color: #f9f9f9;
-            color: #000;
         }
         .social-nav { 
             list-style: none; 
@@ -154,44 +173,21 @@
 <body>
 
 <main>
-    <div class="content-box">
+    <article class="content-box">
         <h1>Empresa en Crisis</h1>
 
-        <p>
-            No siempre es evidente cuándo una empresa entra en crisis. 
-            A veces comienza con pequeños desajustes: retrasos, decisiones que no se toman, resultados que dejan de ser consistentes.
-        </p>
+        <p>No siempre es evidente cuándo una empresa entra en crisis. A veces comienza con pequeños desajustes: retrasos, decisiones que no se toman, resultados inconsistentes.</p>
 
-        <p>
-            Con el tiempo, esos síntomas se acumulan. 
-            La operación pierde claridad, el equipo se descoordina y la organización deja de responder como antes.
-        </p>
+        <p>Con el tiempo, esos síntomas se acumulan. La operación pierde claridad, el equipo se descoordina y la organización deja de responder como antes.</p>
 
-        <p>
-            En ese punto, lo más común es intentar entender qué está pasando. 
-            Pero cuando la situación avanza, entender ya no es suficiente.
-        </p>
+        <p>En ese punto, lo más común es intentar entender qué está pasando. Pero cuando la situación avanza, entender ya no es suficiente. <strong>Una crisis exige decisiones.</strong></p>
 
-        <p><strong>Una crisis exige decisiones.</strong></p>
+        <p>No decisiones perfectas, sino decisiones a tiempo. Acciones que ordenen el sistema, recuperen dirección y permitan avanzar nuevamente.</p>
 
-        <p>
-            No decisiones perfectas, sino decisiones a tiempo. 
-            Acciones que ordenen el sistema, recuperen dirección y permitan avanzar nuevamente.
-        </p>
+        <p>Cuando una empresa pierde control, lo que está en juego no es solo el resultado, sino la capacidad de sostener la operación. Puede ser necesario intervenir directamente en la estructura de decisión.</p>
 
-        <p>
-            Cuando una empresa pierde control, lo que está en juego no es solo el resultado, sino la capacidad de sostener la operación.
-        </p>
-
-        <p>
-            En esos momentos, puede ser necesario intervenir directamente en la estructura de decisión y ejecución. 
-            Ahí es donde el <a href="https://liderazgointerino.com">liderazgo interino</a> y la gestión de crisis se vuelven relevantes.
-        </p>
-
-        <p>
-            Si tu empresa está atravesando una situación donde la dirección se ha debilitado o la operación ha perdido coherencia, es importante actuar antes de que el deterioro avance.
-        </p>
-    </div>
+        <p>Ahí es donde el <a href="https://liderazgointerino.com">liderazgo interino</a> y la gestión de crisis se vuelven relevantes. Es vital actuar antes de que el deterioro avance.</p>
+    </article>
 </main>
 
 <footer>
@@ -204,11 +200,11 @@
     <div class="footer-bio">
         <p>
             Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-            Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
-            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a> en crisis 
-            y la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a>. 
-            Todo bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
-            para entender que todos estamos en <a href="https://elmismobarco.com" target="_blank">el mismo barco</a>.
+            Exploro la <a href="https://inteligencia.com">Inteligencia</a> aplicada, 
+            la <a href="https://liderazgointerino.com">Dirección Interina</a> en crisis 
+            y la narrativa visual en <a href="https://coachdefoto.com">Coach de Foto</a>. 
+            Bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a> 
+            para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
         </p>
     </div>
     
@@ -218,4 +214,8 @@
         <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
         <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
         <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
-        <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a>
+    </ul>
+</footer>
+
+</body>
+</html>
