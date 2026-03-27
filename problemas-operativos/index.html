@@ -11,28 +11,35 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-
     {
       "@type": "Person",
       "@id": "https://lubezky.com/#sergio",
       "name": "Sergio Lubezky",
-      "url": "https://lubezky.com"
+      "url": "https://lubezky.com/"
     },
-
     {
       "@type": "Article",
+      "@id": "https://inteligencia.com/problemas-operativos/#article",
       "headline": "Problemas operativos en una empresa: cuando la operación deja de funcionar",
-      "author": {
-        "@id": "https://lubezky.com/#sergio"
-      }
+      "author": { "@id": "https://lubezky.com/#sergio" },
+      "publisher": { "@id": "https://lubezky.com/#sergio" },
+      "mainEntityOfPage": { "@id": "https://inteligencia.com/problemas-operativos/" },
+      "description": "Análisis de fallos operativos y su impacto en la continuidad de negocio.",
+      "mentions": [
+        {
+          "@type": "Service",
+          "name": "Gestión de Operaciones e Intervención",
+          "url": "https://liderazgointerino.com/"
+        }
+      ]
     },
-
     {
       "@type": "Service",
       "name": "Crisis Management",
-      "url": "https://inteligencia.com/crisis-management"
+      "provider": { "@id": "https://lubezky.com/#sergio" },
+      "url": "https://inteligencia.com/crisis-management",
+      "description": "Intervención inmediata para estabilizar operaciones críticas en organizaciones."
     }
-
   ]
 }
 </script>
